@@ -1,0 +1,179 @@
+:root{
+    --onix: #272742;
+    --white: #FFFFFF;
+    --purple: #5D5FEF;
+    --grayLight: #FAFAFA;
+    --coral: #EC8B72;
+    --blueA: #64A8E0;
+    --green: #6D8851;
+    --gray: #D9D9D9;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--grayLight);
+}
+
+.nav{
+    background-color: var(--grayLight);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 0px  20px 0px var(--onix);
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navTitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: var(--onix);
+
+    transition: ease-out 300ms;
+}
+
+.navTitle:hover{
+    letter-spacing: 15px;
+}
+
+
+.groupContainer{
+    padding-top: 100px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column wrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerItem{
+    /* border: var(--onix) solid 1px; */
+    margin: 30px 0px;
+}
+
+.sectionTitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    color: var(--coral);
+
+}
+
+.sectionContainer{
+    /* border: #000 solid 2px; */
+    box-shadow: 0px 0px 10px 2px var(--onix);
+    width: 800px;
+    margin: 50px 0px;
+    padding: 20px;
+    
+}
+
+.sectionSubtitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.contentText{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+
+.libro1 .image, .libro2 .image{
+    width: 220px;
+    height: 330px;
+}
+
+.movie2 .image{
+    width: 330px;
+    height: 280px;
+}
+
+.lugar1 .image{
+    width: 360px;
+    height: 220px;
+}
+
+.lugar2 .image{
+    width: 317px;
+    height: 196px;
+}
+
+.image{
+    margin: 20px;
+}
+
+.containerHor{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items:center;
+}
+
+.libro2 .containerVer{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    align-items: end;
+}
+
+.frameVideo{
+    width: 420px;
+    height: 220px;
+    margin: 10px;
+}
+
+.movie1 .containerVer{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+    flex-flow: wrap column;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer{
+    height: 150px;
+    background-color: var(--onix);
+}
