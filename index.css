@@ -108,6 +108,33 @@ body{
     padding: 10px;
 }
 
+.containerItem.game1, .containerItem.anime1{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(2, 1fr);
+}
+
+.containerItem.game2, .containerItem.anime2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, 1fr);
+}
+
+.containerItem.game3, .containerItem.anime3{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+
+.containerItem.game1 .sectionSubtitle, .containerItem.game3 .sectionSubtitle,
+.containerItem.anime1 .sectionSubtitle, .containerItem.anime3 .sectionSubtitle{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
 
 
 .libro1 .image, .libro2 .image{
@@ -121,7 +148,7 @@ body{
 }
 
 .lugar1 .image{
-    width: 360px;
+    width: 290px;
     height: 220px;
 }
 
@@ -132,6 +159,33 @@ body{
 
 .image{
     margin: 20px;
+    border-radius: 4px;
+}
+
+.game1 .image, .anime1 .image{
+    width: 317px;
+    height: 196px;
+    margin: 15px auto;
+}
+
+.game2 .image, .anime2 .image{
+    width: 317px;
+    height: 230px;
+    margin: 0px auto;
+}
+
+.game3 .imageGame{
+    background: url(Img/games3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.anime3 .imageGame{
+    background: url(Img/anime3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
 }
 
 .containerHor{
@@ -159,6 +213,8 @@ body{
     width: 420px;
     height: 220px;
     margin: 10px;
+    border: none;
+    border-radius: 4px;
 }
 
 .movie1 .containerVer{
